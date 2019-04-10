@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient1">
+
+    <TextView
+        android:id="@+id/tvAttempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="10dp"
+        android:text="/"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="10dp"
+        android:text="50"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/queCard"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp">
+
+
+        <TextView
+            android:id="@+id/qTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Q. Which of the following is the last movie of Phase - 3 of MCU?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/queRg"
+            android:layout_width="wrap_content"
+            android:layout_height="173dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="87dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/op1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The avengers"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorPrimary"/>
+
+            <RadioButton
+                android:id="@+id/op2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avengers: Age of Ultron"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorPrimary"/>
+
+            <RadioButton
+                android:id="@+id/op3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avengers: Infinty War"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorPrimary"/>
+
+            <RadioButton
+                android:id="@+id/op4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avengers: End Game"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorPrimary"/>
+        </RadioGroup>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/ansCard"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="222dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="answer will display here"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/background_light"/>
+
+    <ImageButton
+        android:id="@+id/ibPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="144dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_background"
+        android:outlineSpotShadowColor="@color/cardview_shadow_end_color"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:tint="@android:color/background_light"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+        tools:ignore="RtlCompat,VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ibPrevious"
+        android:layout_marginEnd="46dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_background"
+        android:outlineSpotShadowColor="@color/cardview_shadow_end_color"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:tint="@android:color/background_light"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+        tools:ignore="RtlCompat,VectorDrawableCompat" />
+
+    <ProgressBar
+        android:id="@+id/prgBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAttempt"
+        android:layout_below="@+id/tvAttempt"
+        android:progressBackgroundTint="@color/colorProgressTint"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAttempt"
+        android:layout_alignStart="@+id/ansCard"
+        android:text="40:00"
+        android:textColor="@android:color/background_light"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>
