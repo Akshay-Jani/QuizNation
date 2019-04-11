@@ -10,8 +10,9 @@
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="198dp"
-        tools:ignore="MissingConstraints"></com.google.android.gms.common.SignInButton>
+        tools:layout_editor_absoluteY="198dp"></com.google.android.gms.common.SignInButton>
 
 </RelativeLayout>
