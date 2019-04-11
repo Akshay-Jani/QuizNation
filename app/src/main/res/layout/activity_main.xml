@@ -29,7 +29,7 @@
             app:cardElevation="8dp"
             app:cardBackgroundColor="@color/colorSplashText"
             android:clickable="true"
-            android:foreground="@color/cardview_shadow_end_color">
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -59,7 +59,9 @@
             android:layout_marginRight="16dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
-            app:cardBackgroundColor="@color/colorSplashText">
+            app:cardBackgroundColor="@color/colorSplashText"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -89,7 +91,9 @@
             android:layout_marginRight="10dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="@color/colorSplashText">
+            app:cardBackgroundColor="@color/colorSplashText"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -119,7 +123,9 @@
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="@color/colorSplashText">
+            app:cardBackgroundColor="@color/colorSplashText"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
