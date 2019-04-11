@@ -8,7 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
-    private static final int SPLASH_ACTIVITY_TIMER = 1000;  //time duration for splash activity to run
+    private static final int SPLASH_ACTIVITY_TIMER = 5000;  //time duration for splash activity to run
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

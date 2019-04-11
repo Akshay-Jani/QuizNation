@@ -26,7 +26,10 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorSplashText"
+            android:clickable="true"
+            android:foreground="@color/cardview_shadow_end_color">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -40,8 +43,9 @@
                     android:layout_height="wrap_content"
                     android:text="Practice"
                     android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -54,7 +58,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="16dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorSplashText">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -68,8 +73,9 @@
                     android:layout_height="wrap_content"
                     android:text="Test"
                     android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -83,7 +89,7 @@
             android:layout_marginRight="10dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            >
+            app:cardBackgroundColor="@color/colorSplashText">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -96,9 +102,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="20dp"
-                    android:text="Flash cards"/>
+                    android:text="Flash cards"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -112,7 +119,7 @@
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            >
+            app:cardBackgroundColor="@color/colorSplashText">
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
@@ -125,9 +132,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="20dp"
-                    android:text="Scorecard"/>
+                    android:text="Scorecard"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
